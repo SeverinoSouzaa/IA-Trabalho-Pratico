@@ -11,7 +11,7 @@ Aqui são organizadas todas as entregas práticas da disciplina, garantindo **tr
 
 ---
 
-# 📊 TP1 - Aprendizado de Máquina com Weka
+## 📊 TP1 - Aprendizado de Máquina com Weka
 
 O Trabalho Prático 1 (TP1) tem como objetivo aplicar conceitos de **Aprendizado de Máquina**, utilizando a ferramenta **Weka**, passando por todas as etapas de um processo experimental completo.
 
