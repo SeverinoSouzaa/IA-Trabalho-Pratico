@@ -1,4 +1,4 @@
-# 🧠 Projetos - Inteligência Artificial (UFAM)
+## 🧠 Projetos - Inteligência Artificial (UFAM)
 
 Repositório destinado aos Trabalhos Práticos (TPs) da disciplina **ITI370 - Inteligência Artificial**, ministrada no curso de Engenharia de Software da UFAM.  
 Aqui são organizadas todas as entregas práticas da disciplina, garantindo **transparência, organização e rastreabilidade**.
