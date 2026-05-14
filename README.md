@@ -19,10 +19,10 @@
 
 ## Sumário de Navegação
 
-1. [Objetivo do Trabalho](#-objetivo-do-trabalho)
-2. [Etapas do Projeto (Metodologia)](#-etapas-do-projeto-metodologia)
-3. [Estrutura do Repositório](#-estrutura-do-repositório)
-4. [Acesso Rápido ao Relatório Final](#-acesso-rápido-ao-relatório-final)
+1. [Objetivo do Trabalho](#objetivo-do-trabalho)
+2. [Etapas do Projeto (Metodologia)](#etapas-do-projeto-metodologia)
+3. [Estrutura do Repositório](#estrutura-do-repositório)
+4. [Acesso Rápido ao Relatório Final](#acesso-rápido-ao-relatório-final)
 
 ---
 
