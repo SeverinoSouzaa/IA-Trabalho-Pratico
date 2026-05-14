@@ -68,7 +68,7 @@ A **Acurácia** (taxa global de acertos) é a métrica base reportada em todos o
 
 ---
 
-### Síntese Metodológica e Tabela de Adoção**
+### Síntese Metodológica e Tabela de Adoção
 
 A tabela a seguir consolida a espinha dorsal do nosso projeto, atuando como um guia diretivo para as próximas etapas práticas de experimentação no software Weka. Sua construção é o resultado de uma intersecção cuidadosa entre os estudos da disciplina com as melhores práticas extraídas da revisão da literatura científica.
 
