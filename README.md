@@ -33,7 +33,7 @@ A evasão em cursos de tecnologia no ensino superior público brasileiro é um p
 O objetivo central deste trabalho é atuar **proativamente na retenção estudantil**. Em vez de apenas observar as taxas de abandono ao final do curso, este projeto modela uma tarefa de **Classificação Binária** (Evasão: *Sim* ou *Não*) capaz de soar um alerta precoce baseando-se no comportamento do aluno logo no primeiro ano. 
 
 Para isso, o projeto exigiu o desenvolvimento de uma inteligência robusta de simulação:
-*   Criação de um *Dataset* sintético complexo via LLMs, injetando características humanas (ruídos, falsos positivos e falsos negativos) para refletir a imprevisibilidade real e evitar a "decoreba" dos algoritmos (*overfitting*).
+*   Criação de um *Dataset* sintético complexo via LLMs, injetando características humanas (ruídos, falsos positivos e falsos negativos) para refletir a imprevisibilidade real).
 *   Testes, validações (Validação Cruzada 10-fold) e aplicações de pré-processamento orientadas pelas melhores práticas da literatura em Mineração de Dados Educacionais.
 *   Comparação do poder preditivo de 4 grandes classificadores: Árvore de Decisão (J48), Random Forest, k-NN (IBk) e Naive Bayes, tendo como foco de sucesso a maximização do *Recall* (Sensibilidade) da classe de evadidos.
 
@@ -50,7 +50,7 @@ Todo o fluxo de trabalho foi rigidamente orientado pelas exigências do enunciad
 | **3º** | **Teste Piloto** | Análise exploratória realizada no ambiente *Preprocess* do Weka em dados brutos. Focada no levantamento de hipóteses de inconsistências antes da aplicação mecânica de qualquer filtro. |
 | **4º** | **Pré-processamento** | Limpeza de dados com embasamento técnico: tratamento de valores nulos via filtro não supervisionado (`ReplaceMissingValues`), justificação de escolhas e tratamento da qualidade dos dados (*Garbage in, Garbage out*). |
 | **5º** | **Visualização de Dados** | Utilização analítica e interpretativa dos gráficos gerados pelo software Weka no pós-processamento, orientando a escolha dos métodos preditivos e analisando o peso de nós (como a Frequência) para a árvore de decisão. |
-| **6º** | **Treino e Teste (Modelagem)** | Avaliação experimental com 4 algoritmos clássicos abordados em sala. Uso rigoroso do método de Validação Cruzada Estratificada (*10-fold cross-validation*), ajuste de hiperparâmetros e análise detalhada via Matriz de Confusão, Acurácia e *Recall*. |
+| **6º** | **Treino e Teste (Modelagem)** | Avaliação experimental com os algoritmos clássicos abordados em sala para problemas de classificação. Uso rigoroso dos métodos, ajuste de hiperparâmetros e análise detalhada via Matriz de Confusão, Acurácia e *Recall*. |
 
 ---
 
