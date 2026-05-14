@@ -11,7 +11,7 @@
 | **Ana Clarissy** | [@usuario1](https://github.com/) | Teste Piloto |
 | **Felipe Aliel** | [@usuario2](https://github.com/) | Teste Piloto |
 | **Luan Serrão** | [luanzito21](https://github.com/luanzito21) | ? |
-| **Luis Rauber** | [luisrauber](https://github.com/) | ? |
+| **Luis Rauber** | [luisrauber](https://github.com/luisrauber) | ? |
 | **Severino Souza** | [SeverinoSouzaa](https://github.com/SeverinoSouzaa) | Organização do Repositório, Definição e Revisão da literatura |
 | **Valdecir Reis** | [@usuario4](https://github.com/) | Criação do DataSet |
 
