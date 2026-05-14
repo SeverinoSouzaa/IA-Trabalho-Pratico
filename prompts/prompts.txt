@@ -1,1 +1,2 @@
-
+PROMPT 1:
+Gere um dataset em CSV com 500 linhas sobre evasão de alunos de tecnologia. Coloque as colunas de idade, bolsa, se trabalha, notas, frequência, reprovações e se o aluno evadiu ou não.
