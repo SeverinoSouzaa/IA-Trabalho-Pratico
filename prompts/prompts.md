@@ -1,1 +1,69 @@
+# DOCUMENTAÇÃO: JUSTIFICATIVA EVOLUTIVA DOS PROMPTS E DATASET SINTÉTICO
+# Projeto: Predição de Evasão Acadêmica com Weka
 
+## Metodologia de Geração
+A construção da nossa base de dados foi um processo iterativo e evolutivo, conduzido através de Modelos de Linguagem de Grande Escala (LLMs). O dataset final não foi gerado em uma única tentativa. Através de sucessivos testes, identificamos falhas semânticas e problemas de overfitting (sobreajuste), o que nos forçou a refinar as instruções passo a passo. Abaixo, apresentamos a linha do tempo com os 4 prompts utilizados, evidenciando o percurso até chegarmos à modelagem definitiva.
+
+---
+
+### PROMPT 1: A Tentativa Inicial 
+**Texto do Prompt:**
+"Gere um dataset em CSV com 500 linhas sobre evasão de alunos de tecnologia. Coloque as colunas de idade, bolsa, se trabalha, notas, frequência, reprovações e se o aluno evadiu ou não."
+
+**Justificativa Evolutiva:** 
+Este prompt gerou dados totalmente aleatórios, sem controle semântico. Alunos com desempenho acadêmico perfeito abandonavam o curso sem critério lógico, o que impossibilitaria qualquer aprendizado por parte dos algoritmos.
+
+---
+
+### PROMPT 2: A Inclusão de Regras Rígidas 
+**Texto do Prompt:**
+"Gere um dataset sobre evasão acadêmica em CSV. Regras: Se a nota for < 5.0 e a frequência < 75%, Evasao = Sim. Caso contrário, Evasao = Não."
+
+**Justificativa Evolutiva:** 
+Esta tentativa gerou o problema de overfitting. Ao impor regras matemáticas sem exceções, o dataset ficou "perfeito demais", permitindo que o algoritmo J48 alcançasse 100% de acurácia de forma artificial, o que não reflete a realidade acadêmica.
+
+---
+
+### PROMPT 3: O Refinamento Estrutural e Atributos Técnicos (Aprimoramento)
+**Texto do Prompt:**
+"Atue como especialista em Mineração de Dados Educacionais. Gere 500 instâncias. Atributos: Idade_Ingresso, Recebe_Bolsa, Trabalha, Media_Notas, Frequencia_Pct, Reprovacoes e Evasao. Notas baixas resultam em Evasao = Sim. Inclua '?' e idades de 90 anos."
+
+**Justificativa Evolutiva:** 
+Este passo definiu os atributos obrigatórios e as anomalias necessárias para o pré-processamento (valores faltantes e outliers). Contudo, a relação entre os dados ainda era muito óbvia e linear, exigindo um refinamento final para incluir cenários complexos.
+
+---
+
+### PROMPT 4: O Dataset Final e Definitivo (Melhor Escolha)
+**Texto do Prompt:**
+"**Aja como um Especialista em Ciência de Dados e Mineração de Dados Educacionais.** Sua tarefa é atuar como um gerador de dados sintéticos para criar um dataset em formato CSV (separado por vírgulas) com exatamente 500 instâncias. Este dataset será utilizado no software Weka para treinar modelos de Aprendizado de Máquina (Classificação) focados em prever a "Evasão" de alunos de cursos de tecnologia em uma universidade pública.
+
+**REGRAS DE ATRIBUTOS (O cabeçalho do CSV deve ser exatamente este):** **`Media_Semestral_Notas,Media_Disciplinas_Matriculadas,Frequencia_Pct,Reprovacoes,Participa_Projetos,Recebe_Auxilio,Idade_Ingresso,Trabalha,Dia_Matricula,Evasao`**
+
+**DOMÍNIO DOS ATRIBUTOS:**
+1. **Media_Semestral_Notas:** Numérico (0.0 a 10.0).
+2. **Media_Disciplinas_Matriculadas:** Numérico (1 a 8). *(Reflete o desânimo do aluno. 5 a 8 é o normal do período; 1 a 3 indica que o aluno está pegando poucas matérias).*
+3. **Frequencia_Pct:** Numérico (0 a 100).
+4. **Reprovacoes:** Numérico (0 a 7). *(Quantidade de reprovações nas disciplinas)*
+5. **Participa_Projetos:** Nominal (Sim, Nao).
+6. **Recebe_Auxilio:** Nominal (Sim, Nao). *(Auxílio financeiro da universidade).*
+7. **Idade_Ingresso:** Numérico (17 a 45).
+8. **Trabalha:** Nominal (Sim, Nao).
+9. **Dia_Matricula:** Nominal (Segunda, Terca, Quarta, Quinta, Sexta) -> *Atributo intencionalmente irrelevante gerado de forma totalmente aleatória.*
+10. **Evasao:** Nominal (Sim, Nao) -> *Classe Alvo.*
+
+**REGRAS DE DISTRIBUIÇÃO E COMPORTAMENTO (MUITO IMPORTANTE PARA EVITAR OVERFITTING):** O dataset não pode ser 100% determinístico. Para simular a realidade e fazer com que a acurácia dos modelos fique entre 80% e 90%, distribua as 500 instâncias nas 4 lógicas abaixo:
+
+- **Grupo 1 - Padrão de Evasão Clássico (Aprox. 35% dos dados):** Alunos desanimados. **`Media_Semestral_Notas`** < 5.0, **`Media_Disciplinas_Matriculadas`** entre 1 e 3, **`Frequencia_Pct`** < 70%, **`Reprovacoes`** >= 3, **`Trabalha`** = Sim, **`Recebe_Auxilio`** = Nao. Para este grupo, **`Evasao`** = Sim.
+- **Grupo 2 - Padrão de Permanência Clássico (Aprox. 35% dos dados):** Alunos engajados. **`Media_Semestral_Notas`** >= 7.0, **`Media_Disciplinas_Matriculadas`** entre 5 e 8, **`Frequencia_Pct`** >= 80%, **`Reprovacoes`** = 0, **`Participa_Projetos`** = Sim. Para este grupo, **`Evasao`** = Nao.
+- **Grupo 3 - Falsos Negativos / Resiliência (Aprox. 15% dos dados):** Alunos com dificuldades, mas que NÃO evadem (geralmente ajudados por bolsas). **`Media_Semestral_Notas`** < 5.0, **`Reprovacoes`** >= 2, **`Trabalha`** = Sim, MAS **`Recebe_Auxilio`** = Sim e **`Evasao`** = Nao. (Simula alunos persistentes).
+- **Grupo 4 - Falsos Positivos / Fatores Externos (Aprox. 15% dos dados):** Alunos excelentes que EVADEM. **`Media_Semestral_Notas`** > 8.0, **`Media_Disciplinas_Matriculadas`** entre 5 e 8, **`Frequencia_Pct`** > 90%, **`Reprovacoes`** = 0, **`Participa_Projetos`** = Sim, MAS **`Evasao`** = Sim. (Simula alunos que mudaram de curso ou passaram em outro vestibular).
+
+**ANOMALIAS OBRIGATÓRIAS (Para cumprir exigências acadêmicas):**
+1. **Missing Values:** Insira o caractere **`?`** em cerca de 5% dos dados nos atributos **`Idade_Ingresso`** e **`Media_Semestral_Notas`**.
+2. **Ruído:** Crie 8 instâncias onde a **`Frequencia_Pct`** receba valores negativos impossíveis (ex: -10, -5).
+3. **Outliers:** Crie 10 instâncias onde a **`Idade_Ingresso`** seja extrema e distante da distribuição principal (ex: 82, 85, 90).
+
+**INSTRUÇÃO DE SAÍDA:** Como 500 linhas excedem o limite de resposta, por favor, gere um **código em linguagem Python** completo e pronto para uso, utilizando as bibliotecas **`pandas`** e **`random`**. O código deve conter perfeitamente as lógicas de probabilidades, pesos e regras dos Grupos 1, 2, 3 e 4 e das Anomalias descritas acima. Ao ser executado, o script deve salvar automaticamente um arquivo chamado "dataset_evasao_v2.csv". Não gere as linhas agora, apenas me entregue o código Python."
+
+**Justificativa Evolutiva: Por que esta foi a Melhor Escolha?**
+Esta versão é a melhor escolha porque abandona a lógica binária e adota modelagem de perfis realistas. Ao incluir variáveis como Recebe_Auxilio e Media_Disciplinas_Matriculadas, permitimos que o Weka identifique causas reais de evasão (sobrecarga e falta de apoio institucional), resultando em um modelo com acurácia entre 80-90%, validando o rigor experimental do projeto. Além disso, a sacada de solicitar a geração do código em Python resolveu as limitações de resposta da IA, permitindo compilar as 500 instâncias de uma única vez de forma confiável e reproduzível.
