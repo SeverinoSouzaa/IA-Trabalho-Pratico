@@ -22,7 +22,6 @@
 1. [Estrutura do Projeto e como Navegar](#estrutura-do-projeto-e-como-navegar)
 2. [Objetivo do Trabalho](#objetivo-do-trabalho)
 3. [Etapas do Projeto (Metodologia)](#etapas-do-projeto-metodologia)
-4. [Estrutura do Repositório](#estrutura-do-repositório)
 
 
 ---
