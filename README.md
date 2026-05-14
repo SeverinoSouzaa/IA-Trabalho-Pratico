@@ -6,12 +6,14 @@
 
 ## Equipe Desenvolvedora
 
-| Nome do Membro | Matrícula | Perfil GitHub | Função/Contribuição Principal |
-| :--- | :--- | :--- | :--- |
-| **[Seu Nome/Colega 1]** | `12345678` | [@usuario1](https://github.com/) | Estruturação do Dataset e Prompts |
-| **[Colega 2]** | `12345678` | [@usuario2](https://github.com/) | Pré-processamento e Teste Piloto |
-| **[Colega 3]** | `12345678` | [@usuario3](https://github.com/) | Modelagem (Treino e Teste) |
-| **[Colega 4]** | `12345678` | [@usuario4](https://github.com/) | Documentação e Revisão de Literatura |
+| Nome do Membro | Perfil GitHub | Função/Contribuição Principal |
+| :--- | :--- | :--- |
+| **Ana Clarissy** | [@usuario1](https://github.com/) | Teste Piloto |
+| **Felipe Aliel** | [@usuario2](https://github.com/) | Teste Piloto |
+| **Luan Serrão** | [@usuario3](https://github.com/) | ? |
+| **Luis Rauber** | [@usuario4](https://github.com/) | ? |
+| **Severino Souza** | [SeverinoSouzaa](https://github.com/SeverinoSouzaa) | Organização do Repositório, Definição e Revisão da literatura |
+| **Valdecir Reis** | [@usuario4](https://github.com/) | Criação do DataSet |
 
 ---
 
