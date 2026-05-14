@@ -1,16 +1,70 @@
 PROMPT 1:
-Gere um dataset em CSV com 500 linhas sobre evasão de alunos de tecnologia. 
-Coloque as colunas de idade, bolsa, se trabalha, notas, frequência, reprovações e se o aluno evadiu ou não.
+Aja como um gerador de dados sintéticos para criar um dataset CSV com 500 instâncias voltado para tarefas de classificação em Machine Learning utilizando o software Weka.
+
+O tema do dataset é evasão universitária em cursos de tecnologia de uma universidade pública.
+
+O cabeçalho do CSV deve ser:
+
+Media_Semestral_Notas,Media_Disciplinas_Matriculadas,Frequencia_Pct,Reprovacoes,Participa_Projetos,Recebe_Auxilio,Idade_Ingresso,Trabalha,Evasao
+
+Regras:
+
+- Alunos com notas baixas, baixa frequência e muitas reprovações devem possuir Evasao = Sim.
+- Alunos com notas altas, alta frequência e poucas reprovações devem possuir Evasao = Nao.
+- Gere os valores dentro de faixas realistas.
+- Participa_Projetos, Recebe_Auxilio e Trabalha devem possuir valores Sim ou Nao.
+- Gere dados coerentes para cursos de tecnologia.
+- Crie exatamente 500 linhas.
+- Gere o resultado diretamente em formato CSV.
+
+Exemplo esperado:
+
+7.5,6,88,0,Sim,Nao,19,Nao,Nao
+3.2,2,45,5,Nao,Nao,24,Sim,Sim
 
 PROMPT 2:
-Gere um dataset sobre evasão acadêmica em CSV. Regras: Se a nota for < 5.0 e a frequência < 75%, Evasao = Sim. 
-Caso contrário, Evasao = Não.
+Aja como um especialista em geração de dados sintéticos para Machine Learning.
 
-PROMPT 3:
-Atue como especialista em Mineração de Dados Educacionais. Gere 500 instâncias. Atributos: Idade_Ingresso, Recebe_Bolsa, Trabalha, Media_Notas, Frequencia_Pct, Reprovacoes e Evasao. 
-Notas baixas resultam em Evasao = Sim. Inclua '?' e idades de 90 anos.
+Crie um dataset CSV com exatamente 500 instâncias para tarefas de classificação no Weka com foco na predição de evasão universitária em cursos de tecnologia de uma universidade pública.
 
-PROMPT 4:
+Cabeçalho obrigatório:
+
+Media_Semestral_Notas,Media_Disciplinas_Matriculadas,Frequencia_Pct,Reprovacoes,Participa_Projetos,Recebe_Auxilio,Idade_Ingresso,Trabalha,Evasao
+
+Regras dos atributos:
+
+- Media_Semestral_Notas: 0 a 10
+- Media_Disciplinas_Matriculadas: 1 a 8
+- Frequencia_Pct: 0 a 100
+- Reprovacoes: 0 a 7
+- Participa_Projetos: Sim/Nao
+- Recebe_Auxilio: Sim/Nao
+- Idade_Ingresso: 17 a 45
+- Trabalha: Sim/Nao
+- Evasao: Sim/Nao
+
+Distribuição esperada:
+
+- Parte dos alunos deve possuir características clássicas de evasão:
+  - notas baixas
+  - baixa frequência
+  - muitas reprovações
+  - trabalha
+  - poucas disciplinas
+
+- Parte dos alunos deve possuir características clássicas de permanência:
+  - notas altas
+  - alta frequência
+  - participação em projetos
+  - nenhuma reprovação
+
+IMPORTANTE:
+- Nem todos os alunos devem seguir padrões perfeitos.
+- Evite gerar um dataset totalmente determinístico.
+
+Gere diretamente o CSV.
+
+PROMPT 3 (final): 
 Aja como um Especialista em Ciência de Dados e Mineração de Dados Educacionais. Sua tarefa é atuar como um gerador de dados sintéticos para criar um dataset em formato CSV (separado por vírgulas) com exatamente 500 instâncias. 
 Este dataset será utilizado no software Weka para treinar modelos de Aprendizado de Máquina (Classificação) focados em prever a "Evasão" de alunos de cursos de tecnologia em uma universidade pública.
 
