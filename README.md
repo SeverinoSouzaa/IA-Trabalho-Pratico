@@ -58,31 +58,29 @@ Todo o fluxo de trabalho foi rigidamente orientado pelas exigências do enunciad
 
 Nossa organização foi pensada para garantir uma navegação fluida, preservando integralmente a estrutura mínima de submissão exigida pelo docente, com a adição de pastas de apoio metodológico para organizar os artefatos de texto mais extensos.
 
-```text
-📦 Raiz do Projeto
- ┣ 📂 1-definicao-problema         # [Pasta de Apoio] Documentação e Literatura
- ┃ ┗ 📜 definicao-fundamentacao.md   # Definição do problema e embasamento teórico
- ┣ 📂 modelagem                    # [Pasta de Apoio] Análise técnica da classificação
- ┃ ┗ 📜 modelagem-resultados.md      # Discussão das Matrizes de Confusão e Métricas
- ┣ 📂 dataset                      # [Pasta Obrigatória] Bases de Dados
- ┃ ┣ 📜 dataset_original.arff        # Base bruta gerada pelo script
- ┃ ┗ 📜 dataset_preprocessado.arff   # Base limpa e tratada após filtros do Weka
- ┣ 📂 prompts                      # [Pasta Obrigatória] Rastreabilidade da IA
- ┃ ┗ 📜 prompts_utilizados.txt       # Escada evolutiva (4 versões) dos comandos LLM
- ┣ 📂 preprocessamento             # [Pasta Obrigatória] Limpeza de Dados
- ┃ ┣ 📜 analise_inicial.md           # Relato do Teste Piloto e exploração visual
- ┃ ┗ 📜 descricao_etapas.md          # Justificativa do uso de filtros (Missing Values)
- ┣ 📂 imagens                      # [Pasta Obrigatória] Resultados Visuais
- ┃ ┣ 🖼️ pipeline_geracao.png         # Fluxo metodológico de criação dos dados
- ┃ ┣ 🖼️ arvore_j48.png               # Grafo visual gerado pelo Weka
- ┃ ┗ 🖼️ matriz_confusao.png          # Prints comprobatórios dos acertos/erros
- ┣ 📂 relatorio                    # [Pasta Obrigatória] Síntese Executiva
- ┃ ┗ 📜 relatorio_final.md           # O documento resumo de todo o experimento
- ┣ 📜 LICENSE                      # Licença de uso do código/dados
- ┗ 📜 README.md                    # Este sumário de navegação
+ ```text
+  Raiz do Projeto
+ ┣ 1-definicao-problema         
+ ┃ ┗ definicao-fundamentacao.md  
+ ┣ modelagem                   
+ ┃ ┗ modelagem-resultados.md    
+ ┣ dataset                     
+ ┃ ┣ dataset_original.arff        
+ ┃ ┗ dataset_preprocessado.arff   
+ ┣ prompts                      
+ ┃ ┗ prompts_utilizados.txt       
+ ┣ preprocessamento             
+ ┃ ┣ analise_inicial.md           
+ ┃ ┗ descricao_etapas.md          
+ ┣ imagens                      
+ ┃ ┣ pipeline_geracao.png       
+ ┃ ┣ arvore_j48.png               
+ ┃ ┗ matriz_confusao.png          
+ ┣ relatorio                    
+ ┃ ┗ relatorio_final.md         
+ ┣ LICENSE                      
+ ┗ README.md
+```
 
---------------------------------------------------------------------------------
-Acesso Rápido ao Relatório Final
-Se você é o avaliador do projeto e deseja visualizar de forma rápida e direta a consolidação dos resultados obtidos no Weka, o fechamento dos objetivos propostos e a análise comportamental de nossos algoritmos (J48, Naive Bayes, k-NN e Random Forest), preparamos um documento executivo que resume nossa jornada.
-Clique aqui para ler o Relatório Final Completo
-***
+
+
