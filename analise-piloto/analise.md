@@ -26,7 +26,7 @@ Verificar se o **dataset_evasao_v2.csv.arff** está estruturado corretamente par
 
 ### Base de dados **dataset_evasao_v2.csv.arff**  sendo executada no weka
 
-![image.png](attachment:00d49aeb-f8ae-438d-a974-ebb1a0bb9a46:image.png)
+![image.png](teste-base-dados.png)
 
 ## Analise do Resultado
 
