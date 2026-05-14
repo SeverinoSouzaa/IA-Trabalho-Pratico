@@ -8,7 +8,7 @@
 
 | Nome do Membro | Perfil GitHub | Função/Contribuição Principal |
 | :--- | :--- | :--- |
-| **Ana Clarissy** | [@usuario1](https://github.com/) | Teste Piloto |
+| **Ana Clarissy** | [anaclarissy](https://github.com/anaclarissy) | Teste Piloto |
 | **Felipe Aliel** | [@usuario2](https://github.com/) | Teste Piloto |
 | **Luan Serrão** | [luanzito21](https://github.com/luanzito21) | ? |
 | **Luis Rauber** | [luisrauber](https://github.com/luisrauber) | ? |
