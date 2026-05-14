@@ -8,8 +8,8 @@
 
 | Nome do Membro | Perfil GitHub | Função/Contribuição Principal |
 | :--- | :--- | :--- |
-| **Ana Clarissy** | [anaclarissy](https://github.com/anaclarissy) | Teste Piloto |
-| **Felipe Aliel** | [@usuario2](https://github.com/) | Teste Piloto |
+| **Ana Clarissy** | [anaclarissy](https://github.com/anaclarissy) | Relatório Final |
+| **Felipe Aliel** | [@usuario2](https://github.com/) | Teste Piloto e Pré processamento |
 | **Luan Serrão** | [luanzito21](https://github.com/luanzito21) | ? |
 | **Luis Rauber** | [luisrauber](https://github.com/luisrauber) | ? |
 | **Severino Souza** | [SeverinoSouzaa](https://github.com/SeverinoSouzaa) | Organização do Repositório, Definição e Revisão da literatura |
