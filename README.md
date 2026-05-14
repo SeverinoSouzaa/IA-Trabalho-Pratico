@@ -1,4 +1,4 @@
-# Trabalho Prático 1: Predição de Evasão em Cursos de Tecnologia
+# Trabalho Prático 1: Predição de evasão em cursos de tecnologia de uma universidade pública
 
 > **Descrição:** Este repositório documenta o ciclo completo de Descoberta de Conhecimento em Bancos de Dados (KDD) e Aprendizado de Máquina aplicado à educação. Utilizando o software **Weka 3.8**, o projeto cria e analisa um conjunto de dados sintético gerado por Inteligência Artificial para identificar precocemente perfis de alunos com risco de evasão em universidades públicas brasileiras. Projeto desenvolvido para a disciplina de Inteligência Artificial (ITI370) do Instituto de Ciências Exatas e Tecnologia da Universidade Federal do Amazonas (UFAM).
 
