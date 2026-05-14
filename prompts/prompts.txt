@@ -31,17 +31,26 @@ DOMÍNIO DOS ATRIBUTOS:
 
 REGRAS DE DISTRIBUIÇÃO E COMPORTAMENTO (MUITO IMPORTANTE PARA EVITAR OVERFITTING): O dataset não pode ser 100% determinístico. Para simular a realidade, distribua as 500 instâncias nas 4 lógicas abaixo:
 
-- Grupo 1 - Padrão de Evasão Clássico (Aprox. 35% dos dados): Alunos desanimados. Media_Semestral_Notas < 5.0, Media_Disciplinas_Matriculadas entre 1 e 3, Frequencia_Pct < 70%, Reprovacoes >= 3, Trabalha = Sim, Recebe_Auxilio = Nao. Para este grupo, Evasao = Sim.
+- Grupo 1 - Padrão de Evasão Clássico (Aprox. 35% dos dados): Alunos desanimados. 
+Media_Semestral_Notas < 5.0, Media_Disciplinas_Matriculadas entre 1 e 3, Frequencia_Pct < 70%, Reprovacoes >= 3, Trabalha = Sim, Recebe_Auxilio = Nao. Para este grupo, Evasao = Sim.
 
-- Grupo 2 - Padrão de Permanência Clássico (Aprox. 35% dos dados): Alunos engajados. Media_Semestral_Notas >= 7.0, Media_Disciplinas_Matriculadas entre 5 e 8, Frequencia_Pct >= 80%, Reprovacoes = 0, Participa_Projetos = Sim. Para este grupo, Evasao = Nao.
+- Grupo 2 - Padrão de Permanência Clássico (Aprox. 35% dos dados): Alunos engajados. 
+Media_Semestral_Notas >= 7.0, Media_Disciplinas_Matriculadas entre 5 e 8, Frequencia_Pct >= 80%, Reprovacoes = 0, Participa_Projetos = Sim. Para este grupo, Evasao = Nao.
 
-- Grupo 3 - Resiliência (Aprox. 15% dos dados): Alunos com dificuldades, mas que NÃO evadem (geralmente ajudados por bolsas). Media_Semestral_Notas < 5.0, Reprovacoes >= 2, Trabalha = Sim, MAS Recebe_Auxilio = Sim e Evasao = Nao. (Simula alunos persistentes).
+- Grupo 3 - Resiliência (Aprox. 15% dos dados): Alunos com dificuldades, mas que NÃO evadem (geralmente ajudados por bolsas). 
+Media_Semestral_Notas < 5.0, Reprovacoes >= 2, Trabalha = Sim, MAS Recebe_Auxilio = Sim e Evasao = Nao. 
+(Simula alunos persistentes).
 
-- Grupo 4 - Fatores Externos (Aprox. 15% dos dados): Alunos excelentes que EVADEM. Media_Semestral_Notas > 8.0, Media_Disciplinas_Matriculadas entre 5 e 8, Frequencia_Pct > 90%, Reprovacoes = 0, Participa_Projetos = Sim, MAS Evasao = Sim. (Simula alunos que mudaram de curso ou passaram em outro vestibular).
+- Grupo 4 - Fatores Externos (Aprox. 15% dos dados): Alunos excelentes que EVADEM. 
+Media_Semestral_Notas > 8.0, Media_Disciplinas_Matriculadas entre 5 e 8, Frequencia_Pct > 90%, Reprovacoes = 0, Participa_Projetos = Sim, MAS Evasao = Sim. 
+(Simula alunos que mudaram de curso ou passaram em outro vestibular).
 
 ANOMALIAS OBRIGATÓRIAS (Para cumprir exigências acadêmicas):
 1. Missing Values: Insira o caractere "?" em cerca de 5% dos dados nos atributos Idade_Ingresso e Media_Semestral_Notas.
 2. Ruído: Crie 8 instâncias onde a Frequencia_Pct receba valores negativos impossíveis (ex: -10, -5).
 3. Outliers: Crie 10 instâncias onde a Idade_Ingresso seja extrema e distante da distribuição principal (ex: 82, 85, 90).
 
-INSTRUÇÃO DE SAÍDA: Como 500 linhas excedem o limite de resposta, por favor, gere um código em linguagem Python completo e pronto para uso, utilizando as bibliotecas pandas e random. O código deve conter perfeitamente as lógicas de probabilidades, pesos e regras dos Grupos 1, 2, 3 e 4 e das Anomalias descritas acima. Ao ser executado, o script deve salvar automaticamente um arquivo chamado "dataset_evasao_v2.csv". Não gere as linhas agora, apenas me entregue o código Python.
+INSTRUÇÃO DE SAÍDA: Como 500 linhas excedem o limite de resposta, por favor, gere um código em linguagem Python completo e pronto para uso, utilizando as bibliotecas pandas e random. 
+O código deve conter perfeitamente as lógicas de probabilidades, pesos e regras dos Grupos 1, 2, 3 e 4 e das Anomalias descritas acima. 
+Ao ser executado, o script deve salvar automaticamente um arquivo chamado "dataset_evasao_v2.csv". 
+Não gere as linhas agora, apenas me entregue o código Python.
