@@ -13,7 +13,7 @@
 | **Luan Serrão** | [luanzito21](https://github.com/luanzito21) | ? |
 | **Luis Rauber** | [luisrauber](https://github.com/luisrauber) | ? |
 | **Severino Souza** | [SeverinoSouzaa](https://github.com/SeverinoSouzaa) | Organização do Repositório, Definição e Revisão da literatura |
-| **Valdecir Reis** | [@usuario4](https://github.com/) | Criação do DataSet |
+| **Valdecir Reis** | [Valdecir2235](https://github.com/) | Criação do DataSet |
 
 ---
 
