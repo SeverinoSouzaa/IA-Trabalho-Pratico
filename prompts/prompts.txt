@@ -11,7 +11,6 @@ Atue como especialista em Mineração de Dados Educacionais. Gere 500 instância
 Notas baixas resultam em Evasao = Sim. Inclua '?' e idades de 90 anos.
 
 PROMPT 4:
-
 Aja como um Especialista em Ciência de Dados e Mineração de Dados Educacionais. Sua tarefa é atuar como um gerador de dados sintéticos para criar um dataset em formato CSV (separado por vírgulas) com exatamente 500 instâncias. 
 Este dataset será utilizado no software Weka para treinar modelos de Aprendizado de Máquina (Classificação) focados em prever a "Evasão" de alunos de cursos de tecnologia em uma universidade pública.
 
