@@ -19,12 +19,25 @@
 
 ## Sumário de Navegação
 
-1. [Objetivo do Trabalho](#objetivo-do-trabalho)
-2. [Etapas do Projeto (Metodologia)](#etapas-do-projeto-metodologia)
-3. [Estrutura do Repositório](#estrutura-do-repositório)
-4. [Acesso Rápido ao Relatório Final](#acesso-rápido-ao-relatório-final)
+1. [Estrutura do Projeto e como Navegar](#estrutura-do-projeto-e-como-navegar)
+2. [Objetivo do Trabalho](#objetivo-do-trabalho)
+3. [Etapas do Projeto (Metodologia)](#etapas-do-projeto-metodologia)
+4. [Estrutura do Repositório](#estrutura-do-repositório)
+
 
 ---
+
+## Estrutura do Projeto e como Navegar
+
+Para facilitar a correção e a leitura, todos os artefatos textuais e práticos foram organizados rigorosamente dentro das pastas exigidas pelo edital. Utilize a tabela abaixo para se guiar diretamente ao conteúdo desejado:
+
+| Diretório | Arquivos de Destaque | O que você encontra nesta pasta |
+| :--- | :--- | :--- |
+| **[/dataset](./dataset)** | `dataset_original.arff`<br>`dataset_preprocessado.arff` | As bases de dados sintéticas (a bruta e a tratada após filtros) prontas para serem importadas e testadas no Weka. |
+| **[/imagens](./imagens)** | `pipeline_geracao.png`<br>`/prints_weka`<br>`/visualizacoes` | O mapa visual do processo de criação dos dados pela IA, os *prints* comprobatórios das matrizes de confusão e a imagem da Árvore J48. |
+| **[/preprocessamento](./preprocessamento)** | `analise_inicial.md`<br>`descricao_etapas.md` | A documentação analítica do nosso Teste Piloto e as justificativas técnicas detalhadas para o tratamento de *missing values* e ruídos. |
+| **[/prompts](./prompts)** | `prompts_utilizados.txt` | A rastreabilidade do projeto: o histórico completo e evolutivo dos comandos (tentativa e erro) até a geração ideal dos perfis de alunos pela IA. |
+| **[/relatorio](./relatorio)** | `1_definicao_fundamentacao.md`<br>`2_modelagem_treino_teste.md`<br>`relatorio_final.md` | O "coração" teórico do trabalho. A literatura, a análise de desempenho e o **Relatório Executivo Final**, numerados para uma leitura cronológica. |
 
 ## Objetivo do Trabalho
 
@@ -53,34 +66,6 @@ Todo o fluxo de trabalho foi rigidamente orientado pelas exigências do enunciad
 | **6º** | **Treino e Teste (Modelagem)** | Avaliação experimental com os algoritmos clássicos abordados em sala para problemas de classificação. Uso rigoroso dos métodos, ajuste de hiperparâmetros e análise detalhada via Matriz de Confusão, Acurácia e *Recall*. |
 
 ---
-
-## Estrutura do Repositório
-
-Nossa organização foi pensada para garantir uma navegação fluida, preservando integralmente a estrutura mínima de submissão exigida pelo docente, com a adição de pastas de apoio metodológico para organizar os artefatos de texto mais extensos.
-
- ```text
-  Raiz do Projeto
- ┣ 1-definicao-problema         
- ┃ ┗ definicao-fundamentacao.md  
- ┣ modelagem                   
- ┃ ┗ modelagem-resultados.md    
- ┣ dataset                     
- ┃ ┣ dataset_original.arff        
- ┃ ┗ dataset_preprocessado.arff   
- ┣ prompts                      
- ┃ ┗ prompts_utilizados.txt       
- ┣ preprocessamento             
- ┃ ┣ analise_inicial.md           
- ┃ ┗ descricao_etapas.md          
- ┣ imagens                      
- ┃ ┣ pipeline_geracao.png       
- ┃ ┣ arvore_j48.png               
- ┃ ┗ matriz_confusao.png          
- ┣ relatorio                    
- ┃ ┗ relatorio_final.md         
- ┣ LICENSE                      
- ┗ README.md
-```
 
 
 
