@@ -26,7 +26,7 @@ Verificar se o **dataset_evasao_v2.csv.arff** está estruturado corretamente par
 
 ### Base de dados **dataset_evasao_v2.csv.arff**  sendo executada no weka
 
-![image.png](imagens/prints-weka/teste-base-dados.png)
+![alt text](../imagens/prints-weka/teste-base-dados.png)
 
 ## Analise do Resultado
 
@@ -63,7 +63,7 @@ Examinar o comportamento estatístico dos atributos acadêmicos e socioeconômic
 
 ### Media_Semestral_Notas
 
-![image.png](attachment:956aa459-6583-4b16-bfc0-1e0980c3d11f:image.png)
+![alt text](../imagens/prints-weka/teste-media-semestral.png)
 
 ## Interpretação
 
@@ -71,7 +71,7 @@ O atributo  **Media_Semestral_Notas** é do tipo **Numérico**, com **25 valores
 
 ### Media_Disciplinas_Matriculadas
 
-![image.png](attachment:e1273b86-ba03-47d8-a1a7-ce219e2cf544:image.png)
+![alt text](../imagens/prints-weka/teste-media-discp.png)
 
 ## Interpretação
 
@@ -79,7 +79,7 @@ O atributo **Media_Disciplinas_Matriculadas** é do tipo **Numérico**, sem valo
 
 ### Frequencia_Pct
 
-![image.png](attachment:929c07d6-9ea8-483c-b843-89c00dbf5ff0:image.png)
+![alt text](../imagens/prints-weka/teste-freqn.png)
 
 ## Interpretação
 
@@ -87,7 +87,7 @@ O atributo **Frequencia_Pct**  é do tipo **Numérico**, sem valores faltantes (
 
 ### Reprovacoes
 
-![image.png](attachment:0623cf19-214b-42b6-b881-b7c2db9a45ce:image.png)
+![alt text](../imagens/prints-weka/teste-reprov.png)
 
 ## Interpretação
 
@@ -95,7 +95,7 @@ O atributo **Reprovacoes** é do tipo **Numérico**, sem valores faltantes (0%),
 
 ### Participa_Projetos
 
-![image.png](attachment:51f33751-edf4-496c-b05a-bc1d53e5517e:image.png)
+![alt text](../imagens/prints-weka/teste-projetos.png)
 
 ## Interpretação
 
@@ -103,7 +103,7 @@ O atributo **Participa_Projetos** é do tipo **Nominal**, sem valores faltantes 
 
 ### Recebe_Auxilio
 
-![image.png](attachment:987dc01c-53eb-49a8-afea-360fc7b24442:image.png)
+![alt text](../imagens/prints-weka/teste-auxilio.png)
 
 ## Interpretação
 
@@ -111,7 +111,7 @@ O atributo **Recebe_Auxilio** é do tipo **Nominal**, sem valores faltantes (0%)
 
 ### Idade_Ingresso
 
-![image.png](attachment:2dd04e68-1bba-4321-8f14-11a79098cd3d:image.png)
+![alt text](../imagens/prints-weka/teste-ingresso.png)
 
 ## Interpretação
 
@@ -119,7 +119,7 @@ O atributo **Idade_Ingresso** é do tipo **Numérico**, com **24 valores faltant
 
 ### Trabalha
 
-![image.png](attachment:de21e191-98ba-437e-99c1-9874f87f04c0:image.png)
+![alt text](../imagens/prints-weka/teste-trabalha.png)
 
 ## Interpretação
 
@@ -127,7 +127,7 @@ O atributo **Trabalha** é do tipo **Nominal**, sem valores faltantes (0%), com 
 
 ### Dia_Matricula
 
-![image.png](attachment:d80cb4ce-37d7-46c2-b19b-5e4da3e4a777:image.png)
+![alt text](../imagens/prints-weka/teste-dia-matr.png)
 
 ****
 
@@ -190,11 +190,11 @@ Identificar atributos com dados faltantes e avaliar os possíveis impactos no tr
 
 ### Media_Semestral_Notas
 
-![image.png](attachment:7e6ff2f3-b8a5-46cc-8534-a0349e991d78:image.png)
+![alt text](../imagens/prints-weka/teste-ausente-mediaSemes.png)
 
 ### Idade_Ingressos
 
-![image.png](attachment:4b22a3ee-35d4-4ef1-8944-e0715655b715:image.png)
+![alt text](../imagens/prints-weka/teste-ausente-ingresso.png)
 
 | **Atributo**  | **Quantidade** | **Percentual** |
 | --- | --- | --- |
@@ -221,7 +221,7 @@ Verificar a presença de padrões incomuns ou valores inconsistentes nos registr
 
 ### Frequencia_Pct
 
-![image.png](attachment:90be9d1d-e753-4320-a7e9-248e6dd8f99a:image.png)
+![alt text](../imagens/prints-weka/teste-ruido-freq.png)
 
 ## Interpretação
 
@@ -248,11 +248,11 @@ O método IQR é uma técnica estatística que define os limites aceitáveis par
 
 ### Frequencia_Pct
 
-![image.png](attachment:2b194acf-8e1a-4ab1-9670-58fa72917e4e:image.png)
+![alt text](../imagens/prints-weka/teste-out-freq.png)
 
 ### Idade_Ingresso
 
-![image.png](attachment:e39416aa-148f-490f-9c6f-a28e16b7261b:image.png)
+![alt text](../imagens/prints-weka/teste-out-ingresso.png)
 
 ## Outliers Observados
 
@@ -273,19 +273,19 @@ Analisar visualmente as relações entre os atributos acadêmicos e a variável 
 
 ### Media_Semestral_Notas x Evasao
 
-![image.png](attachment:68e668b1-6324-4a1c-824b-8c91c4d471b5:image.png)
+![alt text](../imagens/prints-weka/teste-relacao-mediaSem.png)
 
 ### Frequencia_Pct x Reprovacoes
 
-![image.png](attachment:4adce875-dc3f-497f-97f4-052b12046f52:image.png)
+![alt text](../imagens/prints-weka/teste-relacao-freq.png)
 
 ### Media_Semestral_Notas x Reprovacoes
 
-![image.png](attachment:d4214cc6-90c6-4bfb-b8ee-efb55ab503ac:image.png)
+![alt text](../imagens/prints-weka/teste-relacao-mediaSemxRepro.png)
 
 ### Dia_Matricula x Evasao
 
-![image.png](attachment:95b97a2b-118f-4aca-9011-dfb3f1dd430c:image.png)
+![alt text](../imagens/prints-weka/teste-relacao-diaMatrXEvasao.png)
 
 ## Relações Observadas
 
@@ -308,7 +308,7 @@ Identificar atributos sem relação direta com a evasão acadêmica que possam i
 
 ### Dia_Matricula
 
-![image.png](attachment:4c20f2db-5f57-4f52-ae65-54927b037a9e:image.png)
+![alt text](../imagens/prints-weka/teste-atribIrrelevante.png)
 
 ## Atributos analisados
 
