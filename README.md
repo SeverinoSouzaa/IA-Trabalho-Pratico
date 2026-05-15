@@ -9,9 +9,9 @@
 | Nome do Membro | Perfil GitHub | Função/Contribuição Principal |
 | :--- | :--- | :--- |
 | **Ana Clarissy** | [anaclarissy](https://github.com/anaclarissy) | Relatório Final |
-| **Felipe Aliel** | [@usuario2](https://github.com/) | Teste Piloto e Pré processamento |
-| **Luan Serrão** | [luanzito21](https://github.com/luanzito21) | ? |
-| **Luis Rauber** | [luisrauber](https://github.com/luisrauber) | ? |
+| **Felipe Aliel** | [felipealiel](https://github.com/felipealiel) | Teste Piloto e Pré processamento |
+| **Luan Serrão** | [luanzito21](https://github.com/luanzito21) | Modelagem dos Algoritmos |
+| **Luis Rauber** | [luisrauber](https://github.com/luisrauber) | Visualização de Dados |
 | **Severino Souza** | [SeverinoSouzaa](https://github.com/SeverinoSouzaa) | Organização do Repositório, Definição e Revisão da literatura |
 | **Valdecir Reis** | [Valdecir2235](https://github.com/Valdecir2235) | Criação do DataSet |
 
@@ -32,11 +32,12 @@ Para facilitar a correção e a leitura, todos os artefatos textuais e práticos
 
 | Diretório | Arquivos de Destaque | O que você encontra nesta pasta |
 | :--- | :--- | :--- |
+| **[/analise-piloto](./analise-piloto)** | `analise.md` | Testes e análises iniciais antes de qualquer etapa de pré processamento para correção caso haja algo inconsciente |
 | **[/dataset](./dataset)** | `dataset_original.arff`<br>`dataset_preprocessado.arff` | As bases de dados sintéticas (a bruta e a tratada após filtros) prontas para serem importadas e testadas no Weka. |
 | **[/imagens](./imagens)** | `pipeline_geracao.png`<br>`/prints_weka`<br>`/visualizacoes` | O mapa visual do processo de criação dos dados pela IA, os *prints* comprobatórios das matrizes de confusão e a imagem da Árvore J48. |
 | **[/preprocessamento](./preprocessamento)** | `analise_inicial.md`<br>`descricao_etapas.md` | A documentação analítica do nosso Teste Piloto e as justificativas técnicas detalhadas para o tratamento de *missing values* e ruídos. |
 | **[/prompts](./prompts)** | `prompts_utilizados.txt` | A rastreabilidade do projeto: o histórico completo e evolutivo dos comandos (tentativa e erro) até a geração ideal dos perfis de alunos pela IA. |
-| **[/relatorio](./relatorio)** | `1_definicao_fundamentacao.md`<br>`2_modelagem_treino_teste.md`<br>`relatorio_final.md` | O "coração" teórico do trabalho. A literatura, a análise de desempenho e o **Relatório Executivo Final**, numerados para uma leitura cronológica. |
+| **[/relatorio](./relatorio)** | `1-definicao-problema.md`<br>`2-revisao-literatura.md`<br>`relatorio-final.md` | O "coração" teórico do trabalho. A Definição do problema, revisão da literatura e o **Relatório Executivo Final**, numerados para uma leitura cronológica. |
 
 ## Objetivo do Trabalho
 
