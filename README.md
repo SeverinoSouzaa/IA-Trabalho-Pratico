@@ -37,7 +37,7 @@ Para facilitar a correção e a leitura, todos os artefatos textuais e práticos
 | **[/imagens](./imagens)** | `pipeline_geracao.png`<br>`/prints_weka`<br>`/visualizacoes` | O mapa visual do processo de criação dos dados pela IA, os *prints* comprobatórios das matrizes de confusão e a imagem da Árvore J48. |
 | **[/preprocessamento](./preprocessamento)** | `analise_inicial.md`<br>`descricao_etapas.md` | A documentação analítica do nosso Teste Piloto e as justificativas técnicas detalhadas para o tratamento de *missing values* e ruídos. |
 | **[/prompts](./prompts)** | `prompts_utilizados.txt` | A rastreabilidade do projeto: o histórico completo e evolutivo dos comandos (tentativa e erro) até a geração ideal dos perfis de alunos pela IA. |
-| **[/relatorio](./relatorio)** | `1-definicao-problema.md`<br>`2-revisao-literatura.md` <br> `3-descricao-visual-dados.md`<br>`relatorio-final.md` | O "coração" teórico do trabalho. A Definição do problema, revisão da literatura e o **Relatório Executivo Final**, numerados para uma leitura cronológica. |
+| **[/relatorio](./relatorio)** | `1-definicao-problema.md`<br>`2-revisao-literatura.md` <br> `3-descricao-visual-dados.md` <br> `4-modelagem-analises.md`<br>`relatorio-final.md` | O "coração" teórico do trabalho. A Definição do problema, revisão da literatura e o **Relatório Executivo Final**, numerados para uma leitura cronológica. |
 
 ## Objetivo do Trabalho
 
