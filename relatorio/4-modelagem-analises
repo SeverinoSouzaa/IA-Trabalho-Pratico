@@ -1,15 +1,15 @@
-## Modelagem e Resultados
+# Modelagem e Resultados
 
 ## **Naive Bayes (Probabilístico)**
 
 - **Como funciona:** Baseia-se no Teorema de Bayes. Ele assume que cada atributo (como nota ou idade) contribui de forma independente para a probabilidade de um aluno evadir. É um modelo "simples", mas muito rápido.
 - **Análise no Projeto:** Foi o nosso modelo de base (*baseline*). Ele apresentou a menor acurácia (**78,36%**). Isso ocorreu porque, na vida real e no nosso dataset, os atributos são dependentes (ex: quem trabalha geralmente tem menos tempo para estudar, afetando a nota). O Naive Bayes ignora essa correlação, sendo menos preciso aqui.
 
-![Captura de tela 2026-05-14 221848.png](attachment:44cb6961-fa89-4e98-971b-c3d50807be44:Captura_de_tela_2026-05-14_221848.png)
+![alt text](../imagens/prints-weka/modelagem1.png)
 
-![image.png](attachment:1d552154-2cae-4223-8a0c-c7e74ba263b3:image.png)
+![alt text](../imagens/prints-weka/modelagem2.png)
 
-![image.png](attachment:99fbe89c-55a5-4648-834d-94b69686f0dd:image.png)
+![alt text](../imagens/prints-weka/modelagem3.png)
 
 Algoritmos usados: (Naive Bayes, J48, Random Forest, IBk (k =1), IBK *(k=5)* .
 
@@ -29,13 +29,13 @@ Algoritmos usados: (Naive Bayes, J48, Random Forest, IBk (k =1), IBK *(k=5)* .
 - **Análise no Projeto:** Obteve excelentes **87,34%** de acurácia. O grande valor do J48 para a UFAM é a **explicabilidade**. Conseguimos ver visualmente que a **Frequência** é o gatilho principal. Se a frequência for baixa, o risco dispara, independentemente de outros fatores.
 - **Descrição:** A visualização mostra que a `Frequencia_Pct` é o fator determinante. Alunos com menos de 69% de presença são o principal grupo de risco.
 
-![image.png](attachment:e0a141eb-3db3-4ced-9bcc-b86b8e300f2e:image.png)
+![alt text](../imagens/prints-weka/modelagem4.png)
 
-![image.png](attachment:1d1eb9fb-a7c7-433c-93cc-a6dad6fbbff0:image.png)
+![alt text](../imagens/prints-weka/modelagem5.png)
 
-![image.png](attachment:f1b62c48-6274-45cd-9fb6-2742dec13921:image.png)
+![alt text](../imagens/prints-weka/modelagem6.png)
 
-![Captura de tela 2026-05-14 175542.png](attachment:c505ad7f-be63-446c-9fc2-02d11a2bfb27:Captura_de_tela_2026-05-14_175542.png)
+![alt text](../imagens/prints-weka/modelagem7.png)
 
 ### Destaque: Matriz de Confusão (Random Forest)
 
@@ -43,11 +43,11 @@ Algoritmos usados: (Naive Bayes, J48, Random Forest, IBk (k =1), IBK *(k=5)* .
 - **Análise no Projeto:** Foi o **campeão de performance** com **89,38%**. Ele conseguiu captar nuances que o J48 sozinho não viu, como a relação entre "Receber Auxílio" e a permanência de alunos com notas baixas. É o modelo que recomendamos para implementação prática.
 - **Descrição:** O modelo mais assertivo, com apenas 28 falsos negativos em um universo de 490 instâncias.
 
-![image.png](attachment:4818d8cc-3aae-488b-ae7b-fd3e5069a362:image.png)
+![alt text](../imagens/prints-weka/modelagem8.png)
 
-![image.png](attachment:e77ae99d-50a5-4d00-ba8d-f51a7353be4c:image.png)
+![alt text](../imagens/prints-weka/modelagem9.png)
 
-![Captura de tela 2026-05-14 191218.png](attachment:e6a88981-5cd6-4227-92a0-be2f3f2d6cf0:6046d555-1ac6-45f4-bcda-0842a48d8636.png)
+![alt text](../imagens/prints-weka/modelagem10.png)
 
 ## Ajuste de Hiperparâmetros
 
@@ -60,11 +60,11 @@ Algoritmos usados: (Naive Bayes, J48, Random Forest, IBk (k =1), IBK *(k=5)* .
 
 **IBK k=1:**
 
-![Captura de tela 2026-05-14 191806.png](attachment:24ebf58a-bd03-43d5-ba9b-96abd5ab1de5:Captura_de_tela_2026-05-14_191806.png)
+![alt text](../imagens/prints-weka/modelagem11.png)
 
 **IBK K=5 e aplicação de `distanceWeighting`.**
 
-![Captura de tela 2026-05-14 212657.png](attachment:99bf99d8-6c33-4312-8c01-e97acd497b58:Captura_de_tela_2026-05-14_212657.png)
+![alt text](../imagens/prints-weka/modelagem12.png)
 
 ## Conclusão Final
 
