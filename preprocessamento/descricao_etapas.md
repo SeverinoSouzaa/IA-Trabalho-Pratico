@@ -22,11 +22,11 @@ Substituir os valores faltantes encontrados em alguns atributos dentro do datase
 
 ### Media_Semestral_Notas
 
-![image.png](attachment:d6313cd8-4a6a-4099-93dc-f53ed6501f82:image.png)
+![alt text](../imagens/prints-weka/prepro1-falta-mediaSem.png)
 
 ### **Idade_Ingresso**
 
-![image.png](attachment:e2802b46-bee3-4a5a-bf46-74e21d3e371a:image.png)
+![alt text](../imagens/prints-weka/prepro2-falta-ingresso.png)
 
 ## Resultado
 
@@ -40,7 +40,7 @@ Substituir os valores negativos presentes no atributo **Frequencia_Pct** por 0, 
 
 ### Frequencia_Pct
 
-![image.png](attachment:6ed00704-d9a6-435d-947b-bc0e963ab120:image.png)
+![alt text](../imagens/prints-weka/prepro3-out-freq.png)
 
 ## Resultado
 
@@ -56,17 +56,17 @@ O atributo **Idade_ingresso** possui ~10 instâncias acima de 61,5 anos (limite 
 
 ### com NumericCleaner
 
-![image.png](attachment:fdbcbfbd-a793-4392-a176-b7b666e6605c:image.png)
+![alt text](../imagens/prints-weka/prepro4-out-ingresso-numclean.png)
 
 ### Com RemoveWithValues
 
-![image.png](attachment:1b0c59ce-6aae-482f-bd41-6ce2cee31ffd:image.png)
+![alt text](../imagens/prints-weka/prepro5-out-ingresso-remoWV.png)
 
 ## Resultado
 
 As instâncias com **Idade_Ingresso** acima de 61,5 anos foram removidas do dataset, incluindo o outlier extremo de 90 anos. O total de instâncias reduziu de **500 para aproximadamente 490**, e o valor máximo do atributo passou a refletir apenas idades plausíveis para ingresso em graduação.
 
-![image.png](attachment:e1206c4e-5538-44ae-896c-01db47209811:image.png)
+![alt text](../imagens/prints-weka/prepro6-resulOut.png)
 
 # Remover atributo irrelevante
 
@@ -76,7 +76,7 @@ Remover o atributo **Dia_Matricula** do dataset, pois foi confirmado no teste pi
 
 ### Dia_Matricula
 
-![image.png](attachment:26433c83-1e77-4bce-a524-dae2b466e457:image.png)
+![alt text](../imagens/prints-weka/prepro7-irrelevante-diaMatr.png)
 
 ## Resultado
 
@@ -90,7 +90,7 @@ Transformar o atributo numérico **Idade_Ingresso** em faixas etárias categóri
 
 ### **Idade_Ingresso**
 
-![image.png](attachment:aa8edd36-4629-497b-957b-1d01d3967f79:image.png)
+![alt text](../imagens/prints-weka/prepro8-discretize-ingresso.png)
 
 ## Resultado
 
